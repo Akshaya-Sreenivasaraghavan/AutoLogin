@@ -11,7 +11,6 @@ namespace WD_Basics.Pages
         public LoginPage(IWebDriver driver)
         {
             this.driver = driver;
-            // wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             PageFactory.InitElements(driver, this);
         }
